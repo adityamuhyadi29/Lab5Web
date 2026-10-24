@@ -234,3 +234,9 @@ Menambahkan form validasi mahasiswa
 ## Result
 
 ![Gambar 14](screenshot/ss14.png)
+
+Menambahkan daftar menu baru
+
+## Result
+
+![Gambar 15](screenshot/ss15.png)
