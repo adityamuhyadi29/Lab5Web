@@ -240,3 +240,9 @@ Menambahkan daftar menu baru
 ## Result
 
 ![Gambar 15](screenshot/ss15.png)
+
+Kesimpulan
+
+Berdasarkan praktikum ini, JavaScript dapat digunakan untuk menambahkan interaktivitas pada halaman web. Variabel dan operator digunakan untuk mengolah data, percabangan dan perulangan digunakan untuk mengatur alur program, sedangkan function membantu menyusun kode agar lebih terstruktur.
+
+Melalui manipulasi DOM, JavaScript dapat memperbarui konten dan tampilan HTML berdasarkan tindakan pengguna. Penerapan form dan validasi input juga membantu memastikan data yang dimasukkan sesuai dengan ketentuan. Mini project kalkulator nilai mahasiswa menjadi penerapan materi JavaScript dasar dalam sebuah program web sederhana.
