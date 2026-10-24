@@ -228,3 +228,9 @@ Membuat fuction cek angka genap
 ## Result
 
 ![Gambar 13](screenshot/ss13.png)
+
+Menambahkan form validasi mahasiswa
+
+## Result
+
+![Gambar 14](screenshot/ss14.png)
