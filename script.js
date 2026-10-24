@@ -24,3 +24,15 @@ function operasiDasar(a, b) {
 }
 
 operasiDasar(9, 4);
+const inputNilai = promt("Masukkan nilai (0-100):");
+const nilaiMahasiswa = Number(inputNilai);
+
+if(inputNilai === null || inputNilai.trim() === "" ||
+    Number.isNaN(nilaiMahasiswa) || nilaiMahasiswa <0 || nilaiMahasiswa > 100) {
+    alert("Input tidak valid.");
+} else if (nilaiMahasiswa >= 60) {
+    alert("Lulus");
+} else{
+    alert("Belum lulus");
+}
+    
