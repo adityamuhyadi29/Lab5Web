@@ -216,3 +216,9 @@ eksperimen mandiri mengubah latihan 3 dan mengonversinya menjadi number
 ## Result
 
 ![Gambar 11](screenshot/ss11.png)
+
+Membuat perulanagn untuk menampilkan tabel perkalian angka 7 dari 1 sampai 10
+
+## Result
+
+![Gambar 12](screenshot/ss12.png)
