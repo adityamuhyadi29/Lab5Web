@@ -32,3 +32,9 @@ Percabangan Switch — Menampilkan nama bilangan berdasarkan pilihan angka 1–5
 ## Result
 
 ![Gambar 6](screenshot/ss6.png)
+
+Form Bilangan Genap atau Ganjil — Memeriksa apakah input merupakan bilangan bulat genap atau ganjil.
+
+## Result
+
+![Gambar 7](screenshot/ss7.png)
