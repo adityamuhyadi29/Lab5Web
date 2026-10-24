@@ -210,3 +210,9 @@ Catatan: Kolom hasil aktual dapat diperbarui berdasarkan pengujian yang benar-be
 ## Result
 
 ![Gambar 10](screenshot/ss10.png)
+
+eksperimen mandiri mengubah latihan 3 dan mengonversinya menjadi number
+
+## Result
+
+![Gambar 11](screenshot/ss11.png)

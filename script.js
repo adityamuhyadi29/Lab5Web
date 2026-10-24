@@ -36,8 +36,6 @@ if (
     console.log("Modulus:", a % b);
 }
 
-operasiDasar(9, 4);
-
 // Seleksi kondisi if else
 const inputNilai = prompt("Masukkan nilai (0–100):");
 const nilaiMahasiswa = Number(inputNilai);
