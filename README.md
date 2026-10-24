@@ -279,7 +279,111 @@ Menambahkan daftar menu baru
 
 ![Gambar 15](screenshot/ss15.png)
 
-Kesimpulan
+# Dasar-Dasar JavaScript
+
+## 1. Perbedaan `console.log()`, `alert()`, `prompt()`, `textContent`, dan `innerHTML`
+
+- `console.log()`: Menampilkan informasi di console browser.
+- `alert()`: Menampilkan pesan pop-up.
+- `prompt()`: Meminta pengguna memasukkan data.
+- `textContent`: Membaca atau mengubah teks pada elemen HTML.
+- `innerHTML`: Membaca atau mengubah isi HTML, termasuk tag HTML.
+
+## 2. Perbedaan `let` dan `const`
+
+- `let`: Variabel yang nilainya dapat diubah.
+- `const`: Variabel yang tidak dapat diberi nilai ulang.
+
+Contoh:
+
+```javascript
+let umur = 17;
+umur = 18;
+
+const nama = "Budi";
+```
+
+## 3. Perbedaan Operator `==` dan `===`
+
+- `==`: Membandingkan nilai tanpa memperhatikan tipe data.
+- `===`: Membandingkan nilai sekaligus tipe data.
+
+Contoh:
+
+```javascript
+console.log(5 == "5");  // true
+console.log(5 === "5"); // false
+```
+
+## 4. Fungsi `if-else` dan `switch`
+
+- `if-else`: Digunakan untuk menentukan tindakan berdasarkan kondisi tertentu.
+- `switch`: Digunakan untuk memilih tindakan berdasarkan beberapa kemungkinan nilai.
+
+Contoh penggunaan:
+- `if-else`: Memeriksa apakah nilai siswa lulus.
+- `switch`: Memilih menu berdasarkan nomor pilihan.
+
+## 5. Fungsi Parameter dan `return` dalam Function
+
+- **Parameter**: Variabel untuk menerima data yang diberikan ke fungsi.
+- **`return`**: Mengembalikan hasil dari fungsi.
+
+Contoh:
+
+```javascript
+function tambah(a, b) {
+  return a + b;
+}
+
+console.log(tambah(2, 3)); // 5
+```
+
+## 6. Fungsi `document.getElementById()`
+
+Digunakan untuk memilih elemen HTML berdasarkan atribut `id`.
+
+Contoh:
+
+```javascript
+document.getElementById("judul").textContent = "Halo!";
+```
+
+Kode tersebut mengubah teks elemen HTML yang memiliki `id="judul"`.
+
+## 7. Script Validasi Form
+
+Script berikut memvalidasi agar nama tidak kosong dan nilai berada pada rentang 0–100.
+
+```html
+<form onsubmit="return validasi()">
+  Nama: <input type="text" id="nama"><br>
+  Nilai: <input type="number" id="nilai"><br>
+  <button type="submit">Kirim</button>
+</form>
+
+<script>
+function validasi() {
+  let nama = document.getElementById("nama").value.trim();
+  let nilai = document.getElementById("nilai").value;
+
+  if (
+    nama === "" ||
+    nilai === "" ||
+    Number(nilai) < 0 ||
+    Number(nilai) > 100
+  ) {
+    alert("Nama wajib diisi dan nilai harus 0–100!");
+    return false;
+  }
+
+  alert("Data valid!");
+  return true;
+}
+</script>
+```
+
+## Kesimpulan
 
 Berdasarkan praktikum ini, JavaScript dapat digunakan untuk menambahkan interaktivitas pada halaman web. Variabel dan operator digunakan untuk mengolah data, percabangan dan perulangan digunakan untuk mengatur alur program, sedangkan function membantu menyusun kode agar lebih terstruktur.
 
