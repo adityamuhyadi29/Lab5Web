@@ -222,3 +222,9 @@ Membuat perulanagn untuk menampilkan tabel perkalian angka 7 dari 1 sampai 10
 ## Result
 
 ![Gambar 12](screenshot/ss12.png)
+
+Membuat fuction cek angka genap 
+
+## Result
+
+![Gambar 13](screenshot/ss13.png)
