@@ -38,3 +38,9 @@ Form Bilangan Genap atau Ganjil — Memeriksa apakah input merupakan bilangan bu
 ## Result
 
 ![Gambar 7](screenshot/ss7.png)
+
+Mengubah Warna Halaman — Mengubah warna latar halaman menggunakan tombol.
+
+## Result
+
+![Gambar 8](screenshot/ss8.png)
