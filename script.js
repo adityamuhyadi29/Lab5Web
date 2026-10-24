@@ -8,6 +8,21 @@ for (let i = 1; i <= 10; i++) {
     console.log("7 x " + i + " = " + (7 * i));
 }
 
+// Validasi Form Mahasiswa
+document.getElementById("formMahasiswa")
+    .addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const nama = document.getElementById("nama").value.trim();
+        const hasil = document.getElementById("hasilForm");
+
+        if (nama === "") {
+            hasil.textContent = "Nama tidak boleh kosong!";
+        } else {
+            hasil.textContent = "Data berhasil dikirim. Halo, " + nama + "!";
+        }
+    });
+
 // Cek angka Genap
 function cekGenap(angka) {
     return angka % 2 === 0;
