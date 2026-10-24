@@ -28,10 +28,20 @@ operasiDasar(9, 4);
 const inputNilai = prompt("Masukkan nilai (0–100):");
 const nilaiMahasiswa = Number(inputNilai);
 if (inputNilai === null || inputNilai.trim() === "" ||
-Number.isNaN(nilaiMahasiswa) || nilaiMahasiswa < 0 || nilaiMahasiswa > 100) {
-alert("Input nilai tidak valid.");
+    Number.isNaN(nilaiMahasiswa) || nilaiMahasiswa < 0 || nilaiMahasiswa > 100) {
+    alert("Input nilai tidak valid.");
 } else if (nilaiMahasiswa >= 60) {
-alert("Lulus");
+    alert("Lulus");
 } else {
-alert("Belum lulus");
+    alert("Belum lulus");
+}
+
+const inputPilihan = prompt("Masukkan angka 1–5:");
+    switch (inputPilihan) {
+    case "1": alert("Bilangan satu"); break;
+    case "2": alert("Bilangan dua"); break;
+    case "3": alert("Bilangan tiga"); break;
+    case "4": alert("Bilangan empat"); break;
+    case "5": alert("Bilangan lima"); break;
+    default: alert("Pilihan tidak tersedia");
 }
