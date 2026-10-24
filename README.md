@@ -44,3 +44,9 @@ Mengubah Warna Halaman — Mengubah warna latar halaman menggunakan tombol.
 ## Result
 
 ![Gambar 8](screenshot/ss8.png)
+
+DOM dan Checkbox Menu Makanan — Menghitung total harga berdasarkan menu yang dipilih.
+
+## Result
+
+![Gambar 9](screenshot/ss9.png)
