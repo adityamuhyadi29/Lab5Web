@@ -1,5 +1,43 @@
 # Lab5Web
 Belajar java script
+Deskripsi Praktikum
+
+Praktikum ini membahas dasar-dasar JavaScript dan penerapannya untuk membuat halaman web yang interaktif. Materi yang dipelajari meliputi variabel, tipe data, operator, percabangan, perulangan, function, output, manipulasi HTML DOM, serta pembuatan dan validasi form.
+
+Melalui praktikum ini, mahasiswa diharapkan mampu mengimplementasikan JavaScript untuk mengubah konten halaman web, melakukan operasi aritmetika, memproses input pengguna, mengubah tampilan halaman, dan menghitung nilai akhir mahasiswa.
+
+C. Tujuan Praktikum
+
+Memahami sintaks dasar JavaScript dan cara menghubungkannya dengan HTML.
+
+Menggunakan variabel, tipe data, operator, percabangan, perulangan, dan function.
+
+Memahami penggunaan console.log(), alert(), dan prompt().
+
+Memanipulasi elemen HTML menggunakan DOM.
+
+Membuat form interaktif dan melakukan validasi input.
+
+Membuat kalkulator nilai mahasiswa menggunakan JavaScript.
+
+D. Teknologi dan Perangkat
+
+HTML5
+
+JavaScript
+
+Web browser (Google Chrome, Microsoft Edge, atau browser modern lainnya)
+
+Visual Studio Code atau editor kode lainnya
+
+E. Struktur Folder
+
+Struktur folder proyek praktikum adalah sebagai berikut:
+
+lab5_javascript/
+├── index.html
+├── script.js
+└── README.md
 
 Menampilkan Output — Menampilkan teks pada halaman HTML dan Console menggunakan JavaScript.
 
