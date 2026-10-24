@@ -26,3 +26,9 @@ Percabangan If–Else — Menentukan status kelulusan berdasarkan nilai mahasisw
 ## Result
 
 ![Gambar 5](screenshot/ss5.png)
+
+Percabangan Switch — Menampilkan nama bilangan berdasarkan pilihan angka 1–5.
+
+## Result
+
+![Gambar 6](screenshot/ss6.png)
