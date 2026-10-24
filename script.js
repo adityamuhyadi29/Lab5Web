@@ -3,6 +3,11 @@ document.getElementById("pesan").textContent = "Hallo boy";
 
 console.log("Hello World");
 
+// Membuat tabel perkalian angka 7 dari 1 sampai 10
+for (let i = 1; i <= 10; i++) {
+    console.log("7 x " + i + " = " + (7 * i));
+}
+
 // Alret Promt
 const namaPengguna = prompt("Masukkan nama Anda:", "");
 
