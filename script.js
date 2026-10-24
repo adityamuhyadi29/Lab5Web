@@ -8,6 +8,16 @@ for (let i = 1; i <= 10; i++) {
     console.log("7 x " + i + " = " + (7 * i));
 }
 
+// Cek angka Genap
+function cekGenap(angka) {
+    return angka % 2 === 0;
+}
+
+console.log(cekGenap(4)); // true
+console.log(cekGenap(7)); // false
+console.log(cekGenap(10)); // true
+console.log(cekGenap(0)); // true
+
 // Alret Promt
 const namaPengguna = prompt("Masukkan nama Anda:", "");
 
