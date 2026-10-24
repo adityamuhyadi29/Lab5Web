@@ -58,3 +58,70 @@ function hitungTotal() {
     });
     document.getElementById("total").textContent = total.toLocaleString("id-ID");
 }
+
+
+function hitungNilaiAkhir(tugas, uts, uas) {
+    return tugas * 0.30 + uts * 0.30 + uas * 0.40;
+}
+
+function tentukanPredikat(nilai) {
+    if (nilai >= 85) return "A";
+    if (nilai >= 75) return "B";
+    if (nilai >= 60) return "C";
+    if (nilai >= 50) return "D";
+    return "E";
+}
+
+document.getElementById("formNilai")
+    .addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const inputTugas = document.getElementById("tugas").value;
+        const inputUTS = document.getElementById("uts").value;
+        const inputUAS = document.getElementById("uas").value;
+
+        // Validasi kolom kosong
+        if (
+            inputTugas.trim() === "" ||
+            inputUTS.trim() === "" ||
+            inputUAS.trim() === ""
+        ) {
+            alert("Semua nilai wajib diisi!");
+            return;
+        }
+
+        const tugas = Number(inputTugas);
+        const uts = Number(inputUTS);
+        const uas = Number(inputUAS);
+
+        // Validasi nilai harus berada pada rentang 0–100
+        const daftarNilai = [tugas, uts, uas];
+
+        for (const nilai of daftarNilai) {
+            if (!Number.isFinite(nilai) ||
+                nilai < 0 || nilai > 100) {
+                alert("Nilai harus berada pada rentang 0–100!");
+                return;
+            }
+        }
+
+        // Proses perhitungan
+        const akhir = hitungNilaiAkhir(tugas, uts, uas);
+        const huruf = tentukanPredikat(akhir);
+        const kelulusan = akhir >= 60 ? "Lulus" : "Belum lulus";
+
+        // Menampilkan hasil pada halaman HTML
+        document.getElementById("nilaiAkhir").textContent =
+            akhir.toFixed(2);
+
+        document.getElementById("predikat").textContent = huruf;
+        document.getElementById("status").textContent = kelulusan;
+    });
+
+// Mengosongkan hasil ketika tombol Reset ditekan
+document.getElementById("formNilai")
+    .addEventListener("reset", function() {
+        document.getElementById("nilaiAkhir").textContent = "-";
+        document.getElementById("predikat").textContent = "-";
+        document.getElementById("status").textContent = "-";
+    });
