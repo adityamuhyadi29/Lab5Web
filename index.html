@@ -11,7 +11,20 @@
     <input type="number" id="bilangan" step="1">
     <button type="button" onclick="cekBilangan()">Periksa</button>
     <p id="hasilBilangan"></p>
+
+    <h3>Ubah Warna Latar</h3>
+    <button type="button" oneclick="ubahWarnaLatar('lightgreen')">
+        Latar hijau
+    </button>
+    <button type="button" oneclick="ubahWarnaLatar('white')">
+        Latar putih
+    </button>
+    <button type="button" oneclick="ubahWarnaLatar('lightyellow')">
+        Latar Kuning
+    </button>
+
     <script src="script.js" defer></script>
+
     <script>
         function cekBilangan() {
             const input = document.getElementById("bilangan").value;
@@ -24,6 +37,9 @@
             } else {
                 hasil.textContent = "Bilangan ganjil";
             }
+        }
+        function ubahWarnaLatar(warna) {
+            document.body.style.backgroundColor = warna;
         }
     </script>
 </body>
