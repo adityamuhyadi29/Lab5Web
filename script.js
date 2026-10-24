@@ -1,8 +1,9 @@
-
+// Menampilkan output
 document.getElementById("pesan").textContent = "Hallo boy";
 
 console.log("Hello World");
 
+// Alret Promt
 const namaPengguna = prompt("Masukkan nama Anda:", "");
 
 if (namaPengguna && namaPengguna.trim() !== "") {
@@ -13,18 +14,31 @@ if (namaPengguna && namaPengguna.trim() !== "") {
     alert("Nama belum diisi.");
 }
 
-function operasiDasar(a, b) {
+// eksperimen mandiri 
+const inputA = prompt("Masukkan bilangan pertama:");
+const inputB = prompt("Masukkan bilangan kedua:");
+
+if (
+    inputA === null || inputA.trim() === "" ||
+    inputB === null || inputB.trim() === "" ||
+    !Number.isFinite(Number(inputA)) ||
+    !Number.isFinite(Number(inputB))
+) {
+    alert("Input harus berupa bilangan yang valid.");
+} else {
+    const a = Number(inputA);
+    const b = Number(inputB);
+
     console.log("Penjumlahan:", a + b);
     console.log("Pengurangan:", a - b);
     console.log("Perkalian:", a * b);
-    console.log("Pembagian:",
-        b !== 0 ? a / b : "Tidak dapat dibagi nol");
-    console.log("Modulus:",
-        b !== 0 ? a % b : "Tidak dapat dibagi nol");
+    console.log("Pembagian:", b !== 0 ? a / b : "Tidak dapat dibagi nol");
+    console.log("Modulus:", a % b);
 }
 
 operasiDasar(9, 4);
 
+// Seleksi kondisi if else
 const inputNilai = prompt("Masukkan nilai (0–100):");
 const nilaiMahasiswa = Number(inputNilai);
 if (inputNilai === null || inputNilai.trim() === "" ||
@@ -36,6 +50,7 @@ if (inputNilai === null || inputNilai.trim() === "" ||
     alert("Belum lulus");
 }
 
+// Seleksi kondisi switch
 const inputPilihan = prompt("Masukkan angka 1–5:");
     switch (inputPilihan) {
     case "1": alert("Bilangan satu"); break;
@@ -46,6 +61,7 @@ const inputPilihan = prompt("Masukkan angka 1–5:");
     default: alert("Pilihan tidak tersedia");
 }
 
+// DOM
 const daftarMenu = document.querySelectorAll(".menu");
 daftarMenu.forEach((item) => {
     item.addEventListener("change", hitungTotal);
@@ -59,7 +75,7 @@ function hitungTotal() {
     document.getElementById("total").textContent = total.toLocaleString("id-ID");
 }
 
-
+// Mini project calculator
 function hitungNilaiAkhir(tugas, uts, uas) {
     return tugas * 0.30 + uts * 0.30 + uas * 0.40;
 }
