@@ -279,7 +279,7 @@ Menambahkan daftar menu baru
 
 ![Gambar 15](screenshot/ss15.png)
 
-# Dasar-Dasar JavaScript
+# Pertanyaan dan tugas
 
 ## 1. Perbedaan `console.log()`, `alert()`, `prompt()`, `textContent`, dan `innerHTML`
 
