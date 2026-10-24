@@ -20,3 +20,9 @@ Function dan Operasi Aritmetika — Melakukan penjumlahan, pengurangan, perkalia
 ## Result
 
 ![Gambar 4](screenshot/ss4.png)
+
+Percabangan If–Else — Menentukan status kelulusan berdasarkan nilai mahasiswa.
+
+## Result
+
+![Gambar 5](screenshot/ss5.png)
